@@ -1,0 +1,281 @@
+body{
+    background: #2fbfeb ;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.alura-logo{
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.titulo{
+    position: absolute;
+    left: 500px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ebe9e0;
+}
+
+main{
+    display: block;
+}
+
+.container{
+    width: 80%;
+    height: 75vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 20% 35% ;
+    grid-template-rows: 100%;
+    column-gap: 10%;
+    margin-top: 1em;
+}
+
+.section-entrada{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container-texto{
+    width: 100%;
+    height: 80%;
+}
+
+.cuadro-texto{
+    width: 100%;
+    height: 80%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 2px solid #23035b;
+    resize: none;
+    outline: none;
+    color: #0f66d0;
+    font-weight: 400;
+    background: white;
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+.cuadro-texto:hover{
+    border: 2px solid #330be8;
+}
+
+.container-requisitos{
+    display: flex;
+    align-items: center;
+    height: 10%;
+}
+
+.advertencia{
+    margin-top: 0.3em;
+    margin-left: 0.7em;
+}
+
+.container-botones{
+    height: 10%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+}
+
+button{
+    padding: 0 1em;
+    background-color: #9286f1;
+    color: #e3e1ed;
+    border: 1px solid #0d4992;
+    border-radius: 0.6em;
+    box-shadow: 6px 6px 12px rgba(82, 7, 143, 0.5);
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    transition: .5s;
+    min-width: min-content;
+}
+
+button:hover{
+    border: 2px solid #ffffff;
+    background-color: #2636ac;
+    color: #ffffff;
+}
+
+.section-salida{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #ffffff;
+    box-shadow: 6px 6px 12px rgba(82, 7, 143, 0.5);
+    border-radius: 1em;
+    border: 2px solid #661ee1;
+    display: flex;
+    align-items: center;
+}
+
+.container-elementos-salida{
+    width: 100%;
+    height: 75%;
+    box-sizing: border-box;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-mensaje-resultado{
+    width: 100%;
+    height: 70%;
+}
+
+.ocultar{
+    display: none;
+}
+
+.mensaje-resultado{
+    width: 100%;
+    text-align: justify;
+    font-size: 1.3em;
+    word-break: break-all;
+    height: 100%;
+    overflow: auto;
+}
+
+.container-imagen-resultado img{
+    width: 100%;
+    max-width: 336px;
+}
+
+.mensaje-no-encontrado{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.container-parrafo p{
+    font-size: 0.9em;
+    margin-top: 0.3em;
+}
+
+.container-boton-copiar{
+    display: grid;
+    width: 100%;
+}
+
+.container-boton-copiar button{
+    height: 2.5em;
+}
+
+footer{
+    width: 100%;
+    height: 1vh;
+}
+
+.container-copyright{
+    text-align: center;
+    height: 10%;
+    text-transform: capitalize;
+    margin-top: 3.0em;
+    font-weight: bold;
+    font-size: small;
+}
+
+/*Style para Celulares*/
+@media screen and (max-width:480px) {
+
+    header{
+        margin: 1em auto;
+    }
+
+    .titulo{
+        position: absolute;
+        left: 80px;
+        padding-right: 5px;
+    }
+
+    .container{
+        display: block;
+        width: 90%;
+        height: 100%;
+        margin-top: 1%;
+        box-sizing: border-box;
+    }
+
+    .section-entrada, .section-salida{
+        margin-bottom: 1em;
+    }
+
+    .section-salida{
+        height: 30rem;
+        margin-top: 2em;
+    }
+
+    .container-requisitos{
+        margin: 1em 0 1em 0;
+    }
+
+    .container-botones{
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 45%;
+        row-gap: 15%;
+    }
+
+    button{
+        height: 2.5em;
+    }
+
+    footer{
+        margin: 1% 1%;
+    }
+}
+
+/*Style para tablets*/
+
+@media screen and (min-width:481px) and (max-width:830px) {
+
+    .container{
+        display: block;
+        width: 90%;
+        height: 90%;
+        margin-top: 1%;
+        box-sizing: border-box;
+    }
+
+    .section-entrada, .section-salida{
+        margin-bottom: 1em;
+    }
+
+    .section-salida{
+        height: 30rem;
+        margin-top: 2em;
+    }
+
+    .container-requisitos{
+        margin: 1em 0 1em 0;
+    }
+
+    .container-botones{
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 45%;
+        row-gap: 15%;
+    }
+
+    button{
+        height: 2.5em;
+    }
+
+    footer{
+        margin-top: 8vh;
+    }
+}    

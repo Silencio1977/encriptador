@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto-Isaac Jubal</title>
+        <link rel="stylesheet" href="resetv1.css">
+        <link rel="stylesheet" href="v1body.css">
+               <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <a class="alura-vinculo" href="https://app.aluracursos.com/" target="_blank"><img class="alura-logo" src="imagenes/Vector.png" alt="Logo Alura"></a>
+            <h1 class="titulo">Encriptador  proyecto Isaac Jubal</h1>
+        </header>
+        <main>
+            <div class="container">
+
+                <section class="section-entrada"> 
+
+                    <div class="container-texto">
+                        <textarea name="mensaje-entrada" id="mensaje-entrada" cols="30" rows="10" class="cuadro-texto" placeholder="Ingrese su texto aquí..."></textarea>
+                    </div>
+
+                    <div class="container-requisitos">
+                        <img class="exclamacion-advertencia" src="imagenes/exclamation.png" alt="Advertencia">
+                        <h2 class="advertencia">Solo debe ingresar letras minúsculas y sin acentos</h2>
+                    </div>
+
+                    <div class="container-botones">
+                        <button class="boton-encriptar ui-btn" id="boton-encriptar">Encriptar</button>
+                        <button class="boton-desencriptar ui-btn" id="boton-desencriptar">Desencriptar</button>
+                    </div>
+
+                </section>
+
+                <section class="section-salida">
+
+                    <div class="container-elementos-salida">
+
+                        <div class="container-mensaje-resultado">
+                            <p class="mensaje-resultado">Aquí va el mensaje resultado</p>
+                        </div>
+
+                        <div class="container-imagen-resultado">
+                            <img src="imagenes/imagen-mensaje-resultado.png" alt="Isaac">
+                        </div>
+
+                        <h2 class="mensaje-no-encontrado">Ningún mensaje fue encontrado</h2>
+
+                        <div class="container-parrafo">
+                            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+
+                        <div class="container-boton-copiar ocultar">
+                            <button class="boton-copiar ocultar" id="boton-copiar" >Copiar</button>
+                        </div>
+
+                    </div>
+                    
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container-copyright">
+                <p>Copyright © 2023 - Isaac Jubal</p>
+            </div>
+        </footer>
+        <script src="funsionv1.js"></script>
+    </body>
+
+</html>
